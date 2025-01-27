@@ -1,0 +1,25 @@
+This is SBCL 2.3.2, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* (CAR (CDR (CDR '(a b x d))))
+X
+* (CAR (CAR (CDR (CAR (CDR '(a (b (x d))))))))
+X
+* (CAR (CAR (CDR (CAR (CDR (CAR (CAR '(((a (b (x) d)))))))))))
+X
+* (cons 'a (cons 'b (cons 'x (cons 'd nil))))
+(A B X D)
+* (cons 'a (cons (cons 'b (cons (cons 'x (cons 'd nil)) nil)) nil))
+(A (B (X D)))
+* (cons (cons (cons 'a
+                  (cons (cons 'b
+                              (cons (cons 'x nil)
+                                    (cons 'd nil)))
+                        nil))
+            nil)
+      nil)
+(((A (B (X) D))))
