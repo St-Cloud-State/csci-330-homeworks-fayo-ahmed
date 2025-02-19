@@ -1,0 +1,18 @@
+Script started on 2025-02-19 03:46:08+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="51" LINES="8"]
+[0;32m@fayo-ahmed [0m➜ [1;34m/workspaces/csci-330-homeworks-fayo-ahmed/Hwork311 [0;36m([1;31mmain[0;36m) [0m$ exitsbcl(load "bottom-up-mergesort.lisp")[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csbcl --script mergesort.lisp [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd Hwork3[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csbcl --script mergesort.lisp [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd Hwork3[3PHwork3[4Plssbcl --script mergesort.lisp [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csbcl./quicksortg++ quicksort.cpp -o quicksort
+[0;32m@fayo-ahmed [0m➜ [1;34m/workspaces/csci-330-homeworks-fayo-ahmed/Hwork311 [0;36m([1;31mmain[0;36m) [0m$ g++ quicksort.cpp -o quicksort[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csbcl(load "bottom-up-mergesort.lisp")[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cexit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csbcl --script mergesort.lisp [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd Hwork3[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csbcl --script mergesort.lisp [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd Hwork3[3PHwork3[4Plssbcl --script mergesort.lisp [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csbcl./quicksort
+Original array: 10 7 8 9 1 5 
+Sorted array: 1 5 7 8 9 10 
+[0;32m@fayo-ahmed [0m➜ [1;34m/workspaces/csci-330-homeworks-fayo-ahmed/Hwork311 [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+
+Script done on 2025-02-19 03:46:45+00:00 [COMMAND_EXIT_CODE="0"]

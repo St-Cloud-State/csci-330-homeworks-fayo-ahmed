@@ -1,0 +1,47 @@
+Script started on 2025-02-19 03:41:44+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="51" LINES="8"]
+[0;32m@fayo-ahmed [0m➜ [1;34m/workspaces/csci-330-homeworks-fayo-ahmed/Hwork311 [0;36m([1;31mmain[0;36m) [0m$ (load "bottom-up-mergesort.lisp")
+bash: load: command not found
+[0;32m@fayo-ahmed [1;31m➜ [1;34m/workspaces/csci-330-homeworks-fayo-ahmed/Hwork311 [0;36m([1;31mmain[0;36m) [0m$ sbcl
+This is SBCL 1.4.3, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* (load "mergesort.lisp")
+Recursive Mergesort Output: (1 2 3 4 5 6 7 8)
+T
+* (mergesort '(5 3 8 3 9 1 5 2 3 6)))
+
+(1 2 3 3 3 5 5 6 8 9)
+* 
+debugger invoked on a SB-INT:SIMPLE-READER-ERROR in thread
+#<THREAD "main thread" RUNNING {9461061}>:
+  unmatched close parenthesis
+
+    Stream: #<SYNONYM-STREAM :SYMBOL SB-SYS:*STDIN* {91051F1}>
+
+Type HELP for debugger help, or (SB-EXT:EXIT) to exit from SBCL.
+
+restarts (invokable by number or by possibly-abbreviated name):
+  0: [ABORT] Exit debugger, returning to top level.
+
+(SB-IMPL::READ-RIGHT-PAREN #<SYNONYM-STREAM :SYMBOL SB-SYS:*STDIN* {91051F1}> #<unused argument>)
+0] (mergesort '(5 3 8 3 9 1 5 2 3 6))) 
+
+(1 2 3 3 3 5 5 6 8 9)
+0] (mergesort '(4 1 6 3 8 5 7 2))
+
+(1 2 3 4 5 6 7 8)
+0] (mergesort '(4 1 6 3 8 5 7 2))                 23 65 -9 0 77 65 4 123))
+
+(-9 0 4 23 65 65 77 123)
+0] (mergesort '(10 9 8 7 6 5 4 3 2 1))) 
+
+(1 2 3 4 5 6 7 8 9 10)
+0] (exit)
+[0;32m@fayo-ahmed [0m➜ [1;34m/workspaces/csci-330-homeworks-fayo-ahmed/Hwork311 [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+
+Script done on 2025-02-19 03:44:47+00:00 [COMMAND_EXIT_CODE="0"]
