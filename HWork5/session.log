@@ -1,0 +1,58 @@
+Script started on 2025-03-18 18:46:11+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="139" LINES="21"]
+[0;32m@fayo-ahmed [0m➜ [1;34m/workspaces/csci-330-homeworks-fayo-ahmed/HWork5 [0;36m([1;31mmain[0;36m) [0m$ sbcl
+This is SBCL 1.4.3, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* (load "parser.lisp")
+
+T
+* (defparameter *valid-strings*
+  '("ixoys"
+    "ixoyowdssbes"
+    "ixoyowdssb"
+    "ixoyowdssbess"
+    "ixoyowdssbesss"
+    "ixoyowdssbessss"
+    "ixoyowdssbesssss"))
+
+*VALID-STRINGS*
+* (defparameter *invalid-strings*
+  '("ixoyowdssbex"
+    "ixoyowdssbe"
+    "ixoyowdssbessssssssss"
+    "ixoyowdssbesssssssssx"
+    "ixoyowdssbesssssssssy"
+    "ixoyowdssbesssssssssz"
+    "ixoyowdssbesssssssssw"))
+
+*INVALID-STRINGS*
+* (dolist (input *valid-strings*)
+  (parse input))
+
+ixoys is valid.
+ixoyowdssbes is valid.
+ixoyowdssb is valid.
+ixoyowdssbess is invalid.
+ixoyowdssbesss is invalid.
+ixoyowdssbessss is invalid.
+ixoyowdssbesssss is invalid.
+NIL
+* (dolist (input *invalid-strings*)
+  (parse input))
+ixoyowdssbex is invalid.
+ixoyowdssbe is invalid.
+ixoyowdssbessssssssss is invalid.
+ixoyowdssbesssssssssx is invalid.
+ixoyowdssbesssssssssy is invalid.
+ixoyowdssbesssssssssz is invalid.
+ixoyowdssbesssssssssw is invalid.
+NIL
+* (quit)
+[0;32m@fayo-ahmed [0m➜ [1;34m/workspaces/csci-330-homeworks-fayo-ahmed/HWork5 [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+
+Script done on 2025-03-18 18:48:06+00:00 [COMMAND_EXIT_CODE="0"]
