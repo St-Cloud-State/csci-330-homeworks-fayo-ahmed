@@ -1,0 +1,48 @@
+Script started on 2025-03-18 23:19:51+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="139" LINES="16"]
+[0;32m@fayo-ahmed [0m➜ [1;34m/workspaces/csci-330-homeworks-fayo-ahmed/HWork5 [0;36m([1;31mmain[0;36m) [0m$ sbcl
+This is SBCL 1.4.3, an implementation of ANSI Common Lisp.
+More information about SBCL is available at <http://www.sbcl.org/>.
+
+SBCL is free software, provided as is, with absolutely no warranty.
+It is mostly in the public domain; some portions are provided under
+BSD-style licenses.  See the CREDITS and COPYING files in the
+distribution for more information.
+* (load "parser-with-errors.lisp")
+
+T
+* (run-tests '("ixoys" "ixoydsb" "ixoydssb" "ixoydsbes" "ixoyowdssb" "ixoyowdssbes" "ixoyowdssbedsdssb"
+             "axoys" "ixoydb" "ixoydss" "ixoydseb" "ixoyowdsb" "ixoyowdssbe" "ixoyowdssbedsdsb"))
+Input: "ixoys" -> SUCCESS: String is valid.
+
+Input: "ixoydsb" -> SUCCESS: String is valid.
+
+Input: "ixoydssb" -> SUCCESS: String is valid.
+
+Input: "ixoydsbes" -> SUCCESS: String is valid.
+
+Input: "ixoyowdssb" -> SUCCESS: String is valid.
+
+Input: "ixoyowdssbes" -> SUCCESS: String is valid.
+
+Input: "ixoyowdssbedsdssb" -> ERROR: Expected 'b' after L in S, found d at position 13
+
+Input: "axoys" -> ERROR: Expected 'i' at beginning of I, found a at position 0
+
+Input: "ixoydb" -> ERROR: Expected 's' at beginning of L, found b at position 5
+
+Input: "ixoydss" -> ERROR: Expected 'b' after L in S, but reached end at position 7
+
+Input: "ixoydseb" -> ERROR: Expected 'b' after L in S, found e at position 6
+
+Input: "ixoyowdsb" -> SUCCESS: String is valid.
+
+Input: "ixoyowdssbe" -> ERROR: Unexpected end of input in S at position 11
+
+Input: "ixoyowdssbedsdsb" -> ERROR: Expected 'b' after L in S, found d at position 13
+
+NIL
+* * (quit)        (quit)
+[0;32m@fayo-ahmed [0m➜ [1;34m/workspaces/csci-330-homeworks-fayo-ahmed/HWork5 [0;36m([1;31mmain[0;36m) [0m$ exit
+exit
+
+Script done on 2025-03-18 23:21:15+00:00 [COMMAND_EXIT_CODE="0"]
